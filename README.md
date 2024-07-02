@@ -78,4 +78,4 @@ Players of TitanStar Legends can spend talent points that they’ve collected on
 
 #### Mobile View
 
-![Example](assets/mobile.png)
+![Example](assets/mobile_view.png)
