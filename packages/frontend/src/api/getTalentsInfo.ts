@@ -7,16 +7,18 @@ export type TalentsPathDataResponse = {
   maxTalentPoints: number;
 };
 
-const url = `${import.meta.env.VITE_TALENTS_BACKEND_URL}/talents`;
+const baseURL =
+  import.meta.env.VITE_TALENTS_BACKEND_URL ?? "http://localhost:3000";
 
 export const getTalentsData = async (): Promise<TalentsPathDataResponse> => {
+  const url = `${baseURL}/talents`;
   return axios
     .get(url)
     .then((response) => {
       return {
-        path: response.data.paths,
-        pointsSpent: response.data.pointsSpent,
-        maxTalentPoints: response.data.maxPoints,
+        path: response.data.paths ?? [],
+        pointsSpent: response.data.pointsSpent ?? 0,
+        maxTalentPoints: response.data.maxPoints ?? 0,
       };
     })
     .catch((error) => {

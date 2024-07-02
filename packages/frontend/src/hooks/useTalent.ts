@@ -35,6 +35,7 @@ export const useTalent = () => {
       setLoading(false);
     } catch (error) {
       console.error("Error:", error);
+      setTalentPaths(EMPTY_STATE);
       setLoading(false);
     }
   };
