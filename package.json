@@ -1,0 +1,16 @@
+{
+  "name": "dnd-front-end-developer-challenge",
+  "version": "1.0.0",
+  "description": "In this repo you will find the solution to the “TitanStar Legends” Talent path mastery",
+  "main": "index.js",
+  "workspaces": [
+    "packages/*"
+  ],
+  "private": true,
+  "scripts": {
+    "backend:dev": "yarn workspace dnd-backend run dev",
+    "backend:build": "yarn workspace dnd-backend run build",
+    "frontend:dev": "yarn workspace dnd-frontend run dev",
+    "frontend:build": "yarn workspace dnd-frontend run build"
+  }
+}
