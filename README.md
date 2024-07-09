@@ -68,7 +68,7 @@ Players of TitanStar Legends can spend talent points that they’ve collected on
 
 #### The UI is responsive and should be able to adapt to most modern devices.
 
-#### Tablet View
+#### Desktop View
 
 ![Example](assets/desktop_view.png)
 
